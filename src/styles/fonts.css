@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom gradient animation */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* Marquee animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse linear infinite;
+}
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+/* Extra smooth transitions for interactive elements only */
+a, button, input, textarea, select, .hover-scale, .card-hover, .nav-link, .interactive-element {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Ultra smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Smooth scrolling for sections */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Premium smooth hover effects */
+a:hover, button:hover, .hover-scale:hover {
+  transform: translateY(-3px) scale(1.02);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth focus transitions */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 243, 255, 0.4);
+  transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth image transitions for specific images only */
+img.transition-image, .image-hover, .gallery-image {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth background transitions */
+.bg-transition {
+  transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              background-position 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth text transitions */
+.text-transition {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              text-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Enhanced smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth parallax effect */
+.parallax {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth loading animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Smooth scale animations */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Premium smooth scrolling for navigation */
+.nav-link {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth card hover effects */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 243, 255, 0.2);
+  filter: brightness(1.1);
+}
+
+/* Custom scrollbar styling */
+.scrollbar-hide::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #00f3ff, #bd00ff);
+  border-radius: 4px;
+  border: 2px solid rgba(10, 10, 31, 0.3);
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  border: 2px solid rgba(0, 243, 255, 0.5);
+}
+
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: #00f3ff #0a0a1f;
+}
+
+.scrollbar-hide:hover {
+  scrollbar-color: #00ffff #0a0a1f;
+}
