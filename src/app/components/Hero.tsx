@@ -119,7 +119,7 @@ export function Hero() {
             />
             
             <TiltedCard
-              imageSrc="/public/DJ.jpg"
+              imageSrc="/DJ.jpg"
               altText="Drashti Jain"
               captionText="Drashti Jain - Full Stack Developer"
               containerHeight="400px"
